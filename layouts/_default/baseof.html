@@ -1,22 +1,37 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
-	<title>
-		{{ block "title" .}}
-		
-		{{ end }}
-	</title>
-	<link rel="stylesheet" href="/css/main.css">
+    <meta charset="utf-8">
+    <title>{{ .Title }}</title>
+
+    <!-- custom CSS -->
+    <link rel="stylesheet" href="/css/main.css">
 </head>
 <body>
-	{{ range .Site.RegularPages }}
-		<a href="{{ .URL }}"> {{ .Title }} </a>
-		{{ .Content }}
-	{{ end }}
+    <div class="main-content">
+    <!-- sidebar -->
+    <div class="sidebar">
+        <div class="notes">
+            <ul class="notes-list">
+                {{ range .Site.RegularPages }}
+                <li class="notes-link">
+                    <a href="{{ .URL }}"> {{ .Title }} </a>
+                </li>
+                {{ end }}
+            </ul>
+        </div>
+    </div>
 
-	{{ block "main" . }}
+    <!-- display notes -->
+    <div>
+    </div>
+    </div>
 
-	{{ end }}
+
+
+
+    {{ block "main" . }}
+
+    {{ end }}
 </body>
 </html>

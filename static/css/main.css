@@ -14,3 +14,37 @@ body {
     background-color: #fafbfc;
     overflow: hidden;
 }
+
+.sidebar {
+	vertical-align: top;
+	height: 100%;
+	-webkit-overflow-scrolling: touch;
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+
+.sidebar {
+	float: left;
+	width: 25%;
+	padding-left: 2.5em;
+	padding-right: 2.5em;
+	border-right: 1px solid #e7e7e7;;
+}
+
+.notes a {
+	color: #444;
+}
+
+.notes a:hover {
+	color: #777;
+}
+
+.notes-list {
+	list-style-type: none;
+}
+
+
+.notes-list li {
+	text-align: center;
+	line-height: 1.25em;
+}
