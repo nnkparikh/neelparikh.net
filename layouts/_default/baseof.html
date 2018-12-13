@@ -3,35 +3,17 @@
 <head>
     <meta charset="utf-8">
     <title>{{ .Title }}</title>
-
     <!-- custom CSS -->
     <link rel="stylesheet" href="/css/main.css">
 </head>
 <body>
-    <div class="main-content">
-    <!-- sidebar -->
-    <div class="sidebar">
-        <div class="notes">
-            <ul class="notes-list">
-                {{ range .Site.RegularPages }}
-                <li class="notes-link">
-                    <a href="{{ .URL }}"> {{ .Title }} </a>
-                </li>
-                {{ end }}
-            </ul>
-        </div>
-    </div>
+<div class="top-bar">
 
-    <!-- display notes -->
-    <div>
-    </div>
-    </div>
-
-
-
-
+</div>
+<div class="main-content">
     {{ block "main" . }}
 
     {{ end }}
+</div>
 </body>
 </html>

@@ -1,18 +1,39 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 html, body {
     height: 100%;
     width: 100%;
+    min-width: 60em;
+    min-height: 32em;
     -webkit-font-smoothing: antialiased;
+}
+
+.main-content {
+	height: 100%;
+	width: 100%;
+	line-height: 1.25em;
 }
 
 body {
     color: #4a4a4a;
     background-color: #fafbfc;
+    width: 90%;
+    margin: 0 auto;
+    border: 1px solid #e7e7e7;
+    box-shadow: 0 0 10px rgba(0,0,0, 0.3);
     overflow: hidden;
+}
+
+.top-bar {
+    position: relative;
+    height: 2rem;
+    border-bottom: 1px solid #f5f6f7;
+    background: #f9f9fa;
+    font-size: 1rem;
 }
 
 .sidebar {
@@ -25,14 +46,18 @@ body {
 
 .sidebar {
 	float: left;
-	width: 25%;
-	padding-left: 2.5em;
-	padding-right: 2.5em;
-	border-right: 1px solid #e7e7e7;;
+	width: 15%;
+	padding-left: 0.8em;
+	padding-right: 0.8em;
+	border-right: 1px solid #e7e7e7;
 }
 
 .notes a {
 	color: #444;
+}
+
+.notes a:link {
+	text-decoration: none;
 }
 
 .notes a:hover {
@@ -45,6 +70,11 @@ body {
 
 
 .notes-list li {
-	text-align: center;
+	text-align: left;
 	line-height: 1.25em;
+}
+
+.notes-title {
+  font-weight: 600;
+  font-size: 0.8em;
 }
