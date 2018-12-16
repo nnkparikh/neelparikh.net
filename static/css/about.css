@@ -1,0 +1,33 @@
+/* About section */
+.info-card {
+    height: 25%;
+    width: 50%;
+}
+
+#intro {
+	display: flex;
+	flex-direction: column;
+}
+
+#intro span {
+	display: block;
+}
+
+#name {
+    font-size: 1.5em;
+}
+
+.external-links {
+    display: flex;
+    flex-direction: row;
+    font-size: 0.875em;
+}
+
+.external-links span {
+    margin: 0.5em 1em 0 0;
+}
+
+
+#current-role {
+	font-size: 1em;
+}

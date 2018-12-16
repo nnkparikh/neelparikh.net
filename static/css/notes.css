@@ -1,0 +1,89 @@
+.notes {
+ /*   font-family: 'Crimson Text', Garamond, 'Times New Roman', Times, serif;*/
+    font-family: 'Roboto', sans-serif;
+}
+
+.notes-title a {
+	color: black;
+}
+
+.notes-title a:link {
+	text-decoration: none;
+}
+
+.notes-list {
+	list-style-type: none;
+    color: black;
+}
+
+
+.notes-list li {
+	text-align: left;
+    line-height: 1.25em;
+}
+
+.notes-title {
+    font-size: 0.8em;
+    display: inline-block;
+    padding-left: 0.50em;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.date {
+    font-size: 0.875em;
+    color: #424242;
+    display: inline-block;
+    padding-right: 0.25em;
+    width: 100px;
+}
+
+.post-wrapper {
+    width: 70%;
+/*    font-family: 'Crimson Text', Garamond, 'Times New Roman', Times, serif;*/
+    font-family: 'Roboto', sans-serif;
+    color: #4a4a4a;
+    background-color: #fafbfc;
+    font-weight: 400;
+    font-size: 1em;
+}
+h1 {
+    color: #4a4a4a;
+    margin-bottom: 0.35em;
+    font-size: 1.2em;
+    line-height: 40px;
+    text-transform: uppercase;
+}
+
+h2 {
+  margin-top: 1.5em;
+  margin-bottom: 0.75em;
+  border-bottom: 2px solid #e7e7e7;
+}
+
+h3 {
+  margin-top: 1.5em;
+  margin-bottom: 0.75em;
+  border-bottom: 2px dashed #e7e7e7;
+}
+
+p {
+  /* font-family: 'Source Sans Pro', Arial, sans-serif; */
+/*  font-family: 'Crimson Text', Garamond, 'Times New Roman', Times, serif;*/
+  font-family: 'Roboto', sans-serif;
+  margin-top: 0.75em;
+  margin-bottom: 0.75em;
+  text-align: justify;
+  color: black;
+}
+
+.post-wrapper ul, .post-wrapper ol {
+    list-style-position: inside;
+    margin-left: 2.35em;
+    margin-bottom: 1.25em;
+}
+
+.main-wrapper {
+    overflow-y: auto;
+}
+
