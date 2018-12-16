@@ -1,0 +1,20 @@
+{{ define "title" }}
+	{{ .Title }}
+{{ end }}
+
+{{ define "main" }}
+    <div class="main-content">
+        <div class="notes">
+        <ul class="notes-list">
+            {{ range .Site.RegularPages }}
+            <li class="notes-li">
+                    <span class="date"> {{ .Date.Format "Jan 2, 2006" }} </span>
+                    <span class="notes-title">
+                        <a href="{{ .URL }}">{{ .Title }}</a>
+                    </span>
+            </li>
+            {{ end }}
+        </ul>
+        </div>
+    </div>
+{{ end }}

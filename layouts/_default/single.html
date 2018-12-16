@@ -1,4 +1,11 @@
 {{ define "main" }}
-<h1> {{ .Title }} </h1>
-{{ .Content }}
+<!-- <div class="nav-bar">
+    <div> <span> Notes - {{ .Title }} </span> </div>
+</div> -->
+<div class="main-content">
+<div class="post-wrapper">	
+	<h1> {{ .Title }} </h1>
+	{{ .Content }}
+</div>
+</div>
 {{ end }}
