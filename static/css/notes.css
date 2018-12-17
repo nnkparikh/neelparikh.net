@@ -1,6 +1,5 @@
 .notes {
- /*   font-family: 'Crimson Text', Garamond, 'Times New Roman', Times, serif;*/
-    font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 .notes-title a {
@@ -13,13 +12,13 @@
 
 .notes-list {
 	list-style-type: none;
-    color: black;
+  color: black;
 }
 
 
 .notes-list li {
 	text-align: left;
-    line-height: 1.25em;
+  line-height: 1.25em;
 }
 
 .notes-title {
@@ -27,11 +26,10 @@
     display: inline-block;
     padding-left: 0.50em;
     text-transform: uppercase;
-    font-weight: 600;
 }
 
 .date {
-    font-size: 0.875em;
+    font-size: 0.8em;
     color: #424242;
     display: inline-block;
     padding-right: 0.25em;
@@ -40,39 +38,34 @@
 
 .post-wrapper {
     width: 70%;
-/*    font-family: 'Crimson Text', Garamond, 'Times New Roman', Times, serif;*/
-    font-family: 'Roboto', sans-serif;
-    color: #4a4a4a;
+    font-family: 'Crimson Text', Garamond, 'Times New Roman', Times, serif;
+    color: #424242;
     background-color: #fafbfc;
-    font-weight: 400;
     font-size: 1em;
 }
+
 h1 {
     color: #4a4a4a;
-    margin-bottom: 0.35em;
-    font-size: 1.2em;
-    line-height: 40px;
+    font-size: 1.5em;
     text-transform: uppercase;
 }
 
 h2 {
-  margin-top: 1.5em;
-  margin-bottom: 0.75em;
+  margin-top: 1em;
+  margin-bottom: 0.5em;
   border-bottom: 2px solid #e7e7e7;
 }
 
 h3 {
-  margin-top: 1.5em;
-  margin-bottom: 0.75em;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
   border-bottom: 2px dashed #e7e7e7;
 }
 
 p {
-  /* font-family: 'Source Sans Pro', Arial, sans-serif; */
-/*  font-family: 'Crimson Text', Garamond, 'Times New Roman', Times, serif;*/
-  font-family: 'Roboto', sans-serif;
-  margin-top: 0.75em;
-  margin-bottom: 0.75em;
+  font-family: 'Crimson Text', Garamond, 'Times New Roman', Times, serif;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
   text-align: justify;
   color: black;
 }
@@ -86,4 +79,3 @@ p {
 .main-wrapper {
     overflow-y: auto;
 }
-

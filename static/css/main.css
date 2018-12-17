@@ -37,7 +37,7 @@ body {
 
 /* navigation bar */
 .nav-bar {
-    margin-bottom: 1em;
+    margin-bottom: 0.5em;
 }
 
 [class^=page--about] #nav-about,
