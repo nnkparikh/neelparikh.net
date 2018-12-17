@@ -1,7 +1,7 @@
 ---
 title: "Operating Systems Concepts"
 date: 2018-12-13T20:49:53-07:00
-draft: false
+draft: true
 author: "Neel Parikh"
 ---
 

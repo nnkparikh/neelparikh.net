@@ -1,5 +1,5 @@
 ---
-title: "Projects"
+title: "Projects | Neel Parikh"
 date: 2018-12-16T18:21:02-07:00
 draft: true
 author: "Neel Parikh"
