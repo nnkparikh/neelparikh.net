@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html class={{ block "head" . }} {{ end }} lang="en">
 <head>
     <meta charset="utf-8">
     <title>{{ .Title }}</title>
@@ -15,9 +15,9 @@
 	<div class="main-wrapper">
         <div class="nav-bar">
             <div id="internal-links">
-                <div> <a href="/">About </a> </div>
-                <div> <a href="/posts/">Notes </a> </div>
-                <div> <a href="/">Projects </a> </div>
+                <div id="nav-about"> <a href="/">About </a> </div>
+                <div id="nav-notes"> <a href="/notes/">Notes </a> </div>
+                <div id="nav-projects"> <a href="/projects/">Projects </a> </div>
             </div>
         </div>
         {{ block "main" . }}
