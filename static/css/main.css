@@ -40,6 +40,12 @@ body {
     margin-bottom: 1em;
 }
 
+[class^=page--about] #nav-about,
+[class^=page--notes] #nav-notes,
+[class^=page--projects] #nav-projects {
+    border-bottom: 2px solid #a9581fc9;
+}
+
 #internal-links {
     display: flex;
     flex-direction: row;
@@ -49,8 +55,12 @@ body {
     font-size: 0.875em;
     font-weight: 500;
     margin-right: 0.5em;
-    border-bottom: 1px dashed #e7e7e7;
 }
+
+#internal-links div:hover {
+    border-bottom: 2px solid #a9581fc9;
+}
+
 
 a, a:link, a:visited {
     text-decoration: none;
