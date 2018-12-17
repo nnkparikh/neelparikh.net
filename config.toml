@@ -1,3 +1,4 @@
-baseURL = "http://neelparikh.net/"
+baseURL = "http://neelparikh.net.s3-website.us-west-2.amazonaws.com/"
 languageCode = "en-us"
 title = "Neel Parikh"
+disableKinds = ["taxonomy", "taxonomyTerm"]
