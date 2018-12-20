@@ -28,7 +28,7 @@ OS needs to manage memory
 #### 3. I/O
 blaal ha
 
-### Abstractions
+### Resource abstractions
 
 
 ## Life without an operating system
