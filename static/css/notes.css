@@ -2,17 +2,12 @@
   font-family: 'Roboto', sans-serif;
 }
 
-.notes-title a {
-	color: black;
-}
-
 .notes-title a:link {
 	text-decoration: none;
 }
 
 .notes-list {
 	list-style-type: none;
-  color: black;
 }
 
 
@@ -38,36 +33,38 @@
 
 .post-wrapper {
     width: 70%;
-    font-family: 'Crimson Text', Garamond, 'Times New Roman', Times, serif;
-    color: #424242;
+    font-family: 'Roboto', sans-serif;
     background-color: #fafbfc;
     font-size: 1em;
 }
 
 h1 {
-    color: #4a4a4a;
-    font-size: 1.5em;
-    text-transform: uppercase;
+  font-size: 1.8em;
+  margin-bottom: .5rem;
 }
 
 h2 {
-  margin-top: 1em;
-  margin-bottom: 0.5em;
+  font-size: 1.3em;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
   border-bottom: 2px solid #e7e7e7;
 }
 
 h3 {
-  margin-top: 0.5em;
-  margin-bottom: 0.5em;
+  font-size: 1.2em;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
   border-bottom: 2px dashed #e7e7e7;
 }
 
+h1, h2, h3, h4  {
+  font-weight: 500;
+}
+
 p {
-  font-family: 'Crimson Text', Garamond, 'Times New Roman', Times, serif;
   margin-top: 0.5em;
   margin-bottom: 0.5em;
   text-align: justify;
-  color: black;
 }
 
 .post-wrapper ul, .post-wrapper ol {
