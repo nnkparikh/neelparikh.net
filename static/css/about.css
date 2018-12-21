@@ -13,10 +13,6 @@
 	display: block;
 }
 
-#name {
-    font-size: 1.5em;
-}
-
 .external-links {
     display: flex;
     flex-direction: row;
