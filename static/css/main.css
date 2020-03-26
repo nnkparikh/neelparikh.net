@@ -24,14 +24,15 @@ body {
     font-size: 1em;
     /* colors */
     color: #171616;
-    background-color: #efeded;
-    background-image: repeating-linear-gradient(45deg, transparent, transparent 8px, rgba(255,255,255,.5) 8px, rgba(255,255,255,.5) 10px);
+    background-color: #cdcdcd;
+    /* background-image: repeating-linear-gradient(45deg, transparent, transparent 8px, rgba(255,255,255,.5) 8px, rgba(255,255,255,.5) 10px); */
     border: 1px solid #e7e7e7;
+    border-top: none;
     box-shadow: 0 0 10px rgba(0,0,0, 0.3);
 }
 
 .body-wrapper {
-    background-color: #efeded;
+    background-color: #dcdcdc;
     height: 100%;
 }
 
@@ -63,7 +64,7 @@ body {
 #link-wrapper {
     border-top: 1px solid #adacac;
     border-bottom: 1px solid #adacac;
-    background-color: #dcdcdc;
+    background-color: #d2d2d2;
 }
 
 #internal-links {
