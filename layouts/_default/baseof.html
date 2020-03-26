@@ -12,16 +12,21 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/fontawesome.css" integrity="sha384-WK8BzK0mpgOdhCxq86nInFqSWLzR5UAsNg0MGX9aDaIIrFWQ38dGdhwnNCAoXFxL" crossorigin="anonymous">
 </head>
 <body>
-	<div class="main-wrapper">
-        <div class="nav-bar">
-            <div id="internal-links">
-                <div id="nav-about"> <a href="/">About </a> </div>
-                <div id="nav-notes"> <a href="/notes/">Notes </a> </div>
-                <div id="nav-projects"> <a href="/projects/">Projects </a> </div>
+    <div class="body-wrapper">
+        <div class="nav-wrapper">
+            <div class="nav-bar">
+                <div id="header-name">Neel Parikh</div>
+                <div id="internal-links">
+                    <div id="nav-notes"> <a href="/notes/">Blog </a> </div>
+                    <div id="nav-projects"> <a href="/projects">Projects </a> </div>
+                    <div id="nav-about"> <a href="/">About </a> </div>
+                </div>
             </div>
         </div>
-        {{ block "main" . }}
-        {{ end }}
-	</div>
+        <div class="main-wrapper">
+            {{ block "main" . }}
+            {{ end }}
+        </div>
+    </div>
 </body>
 </html>
