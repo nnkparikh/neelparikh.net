@@ -50,9 +50,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 1.25em 1.75em 1em 1.25em;
-    background-color: #353535;
-    color: #efeded;
+    padding: 0.25em 1.75em 0.25em 1.25em;
 }
 
 /* [class^=page--about] #nav-about,
