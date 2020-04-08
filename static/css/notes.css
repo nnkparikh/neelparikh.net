@@ -14,26 +14,30 @@
 .notes-list li {
 	text-align: left;
   line-height: 1.25em;
+  background-color: #d6d6d6;
 }
 
 .notes-title {
-    font-size: 0.8em;
-    display: inline-block;
-    padding-left: 0.50em;
-    text-transform: uppercase;
+  font-size: 0.875em;
+  display: inline-block;
+}
+
+.notes-title:hover {
+  background-color: #d2d2d2;
+  border-bottom: 1px dashed #000;
 }
 
 .date {
-    font-size: 0.8em;
-    color: #424242;
-    display: inline-block;
-    padding-right: 0.25em;
-    width: 100px;
+  font-size: 0.8em;
+  color: #424242;
+  display: inline-block;
+  padding-right: 0.25em;
+  width: 100px;
 }
 
 .post-wrapper {
-    font-family: 'Roboto', sans-serif;
-    font-size: 1em;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1em;
 }
 
 h1 {
@@ -75,7 +79,7 @@ p {
 }
 
 .post-wrapper ul, .post-wrapper ol {
-    list-style-position: inside;
-    margin-left: 2.35em;
-    margin-bottom: 1.25em;
+  list-style-position: inside;
+  margin-left: 2.35em;
+  margin-bottom: 1.25em;
 }
