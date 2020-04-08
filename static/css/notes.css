@@ -38,7 +38,7 @@
 
 h1 {
   font-size: 1.25em;
-  border-bottom: 1px solid #000;
+  border-bottom: 1px dashed #000;
 }
 
 .byline {
