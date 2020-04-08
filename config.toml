@@ -5,3 +5,7 @@ disableKinds = ["taxonomy", "taxonomyTerm"]
 
 [permalinks]
   posts = "/:section/:year/:month/:title/"
+
+[[deployment.targets]]
+name = "AWS"
+URL = "s3://neelparikh.net?region=us-west-2"
