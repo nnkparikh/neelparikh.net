@@ -34,7 +34,7 @@
                         <li class="notes-li">
                             <span class="date"> {{ .Date.Format "Jan 2, 2006" }} </span>
                             <span class="notes-title">
-                                <a href="{{ .Permalink }}">{{ .Title }}</a>
+                                <a href="{{ .RelPermalink }}">{{ .Title }}</a>
                             </span>
                         </li>
                     {{ end }}
