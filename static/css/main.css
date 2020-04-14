@@ -9,8 +9,9 @@ html {
     width: 100%;
     min-height: 100%;
     font-size: 105%;
-    background-color: #ffffff;
+    background-color: #e7e7e7;
     -webkit-font-smoothing: antialiased;
+    background-image: repeating-linear-gradient(45deg, transparent, transparent 8px, rgba(255,255,255,.5), 8px, rgba(255,255,255,.5) 10px);
 }
 
 body {
