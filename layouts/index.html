@@ -2,14 +2,14 @@
 <html class="page--notes" lang="en">
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{{ .Title }}</title>
     <!-- custom CSS -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto%7CRoboto+Mono" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.min.css" />
     <link rel="stylesheet" href="/css/main.css">
     <link rel="stylesheet" href="/css/about.css">
     <link rel="stylesheet" href="/css/notes.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/brands.css" integrity="sha384-whKHCkwP9f4MyD1vda26+XRyEg2zkyZezur14Kxc784RxUU1E7HvWVYj9EoJnUV7" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/fontawesome.css" integrity="sha384-WK8BzK0mpgOdhCxq86nInFqSWLzR5UAsNg0MGX9aDaIIrFWQ38dGdhwnNCAoXFxL" crossorigin="anonymous">
 </head>
 <body>
     <div class="body-wrapper">
@@ -25,23 +25,25 @@
                 </div>
             </div>
         </div>
-        <div class="main-wrapper">
-            <div class="main-content">
-                {{ .Content }}
-                <div class="notes">
-                    <ul class="notes-list">
-                    {{ range where .Site.RegularPages "Section" "posts" }}
-                        <li class="notes-li">
-                            <span class="date"> {{ .Date.Format "Jan 2, 2006" }} </span>
-                            <span class="notes-title">
-                                <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-                            </span>
-                        </li>
-                    {{ end }}
-                    </ul>
+        <article itemscope itemtype="http://schema.org/BlogPosting">
+            <div class="main-wrapper">
+                <div class="main-content">
+                    {{ .Content }}
+                    <div class="notes">
+                        <ul class="notes-list">
+                        {{ range where .Site.RegularPages "Section" "posts" }}
+                            <li class="notes-li">
+                                <time> {{ .Date.Format "2006-01-02" }} </time>
+                                <span class="notes-title">
+                                    <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+                                </span>
+                            </li>
+                        {{ end }}
+                        </ul>
+                    </div>
                 </div>
-            </div>
-        </div>
+            </div>    
+        </article>
     </div>
 </body>
 </html>

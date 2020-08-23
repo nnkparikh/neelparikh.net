@@ -8,14 +8,26 @@ html {
     height: 100%;
     width: 100%;
     min-height: 100%;
-    font-size: 105%;
+    font-size: 100%;
     background-color: #e7e7e7;
-    -webkit-font-smoothing: antialiased;
 }
 
 body {
     height: 100%;
     width: 100%;
+}
+
+@media only screen and (max-width: 850px) {
+    .body-wrapper {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 850px) {
+    .body-wrapper {
+        width: 50%;
+        min-width: 40em;
+    }
 }
 
 .body-wrapper {
@@ -24,8 +36,6 @@ body {
     margin: 0 auto;
     min-height: 100%;
     height: auto;
-    width: 40%;
-    min-width: 50em;
     /* font information for body */
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
@@ -55,7 +65,6 @@ body {
     padding: 0.25em 1.75em 0.25em 1.25em;
     background-color: #333333;
     color: #f2f2f2;
-    height: 2em;
 }
 
 /* [class^=page--about] #nav-about,
@@ -77,7 +86,7 @@ body {
 }
 
 #internal-links div {
-    font-size: 0.875em;
+    font-size: 1em;
     font-weight: 500;
     margin-right: 0.75em;
 }
@@ -88,7 +97,7 @@ body {
 
 
 #header-name {
-    font-size: 1.25em;
+    font-size: 1.5em;
     display: flex;
     align-items: flex-end;
     padding: 0 0 0 0;
