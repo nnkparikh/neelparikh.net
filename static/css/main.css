@@ -25,11 +25,13 @@ body {
 
 .content {
     width: 100%;
-    max-width: 39rem;
-    margin-left: auto;
+    max-width: 57rem;
+    margin-left: 8rem;
     margin-right: auto;
-    margin-top: 4rem;
+    margin-top: 2rem;
     margin-bottom: 4rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 
 h1 {
