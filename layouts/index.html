@@ -8,42 +8,20 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto%7CRoboto+Mono" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.min.css" />
     <link rel="stylesheet" href="/css/main.css">
-    <link rel="stylesheet" href="/css/about.css">
-    <link rel="stylesheet" href="/css/notes.css">
 </head>
 <body>
-    <div class="body-wrapper">
-        <div class="nav-wrapper">
-            <div class="nav-bar">
-                <div id="header-name">Neel Parikh</div>
+    <div class="content">
+        <header id="header">
+            <h1>Neel Parikh</h1>
+            <div id="nav">
+                <ul>
+                    <li><a href="/writing/">Blog</a></li>
+                    <li><a href="/projects">Projects</a></li>
+                    <li><a href="/about">About</a></li>
+                </ul>
             </div>
-            <div id="link-wrapper">
-                <div id="internal-links">
-                    <div id="nav-notes"> <a href="/">Blog </a> </div>
-                    <div id="nav-projects"> <a href="/">Projects </a> </div>
-                    <div id="nav-about"> <a href="/">About </a> </div>
-                </div>
-            </div>
-        </div>
-        <article itemscope itemtype="http://schema.org/BlogPosting">
-            <div class="main-wrapper">
-                <div class="main-content">
-                    {{ .Content }}
-                    <div class="notes">
-                        <ul class="notes-list">
-                        {{ range where .Site.RegularPages "Section" "posts" }}
-                            <li class="notes-li">
-                                <time> {{ .Date.Format "2006-01-02" }} </time>
-                                <span class="notes-title">
-                                    <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-                                </span>
-                            </li>
-                        {{ end }}
-                        </ul>
-                    </div>
-                </div>
-            </div>    
-        </article>
+        </header>
+        
     </div>
 </body>
 </html>
