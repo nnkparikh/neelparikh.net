@@ -1,15 +1,19 @@
 <!DOCTYPE html>
 <html class={{ block "head" . }} {{ end }} lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>{{ .Title }}</title>
-    <!-- custom CSS -->
-    <link href="https://fonts.googleapis.com/css?family=Roboto%7CRoboto+Mono" rel="stylesheet">
-    <link rel="stylesheet" href="css/normalize.min.css" />
-    <link rel="stylesheet" href="/css/main.css">
-</head>
-<body>
-
-</body>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>{{ .Title }}</title>
+        <!-- custom CSS -->
+        <link href="https://fonts.googleapis.com/css?family=Roboto%7CRoboto+Mono" rel="stylesheet">
+        <link rel="stylesheet" href="css/normalize.min.css" />
+        <link rel="stylesheet" href={{ block "styles" . }} {{ end }}/>
+        <link rel="stylesheet" href="/css/main.css">
+    </head>
+    <body>
+        <div class="content">
+            {{ block "main" . }}
+            {{ end }}
+        </div>
+    </body>
 </html>

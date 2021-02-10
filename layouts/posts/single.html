@@ -2,15 +2,16 @@
 	"page--notes"
 {{ end }}
 
+{{ define "styles" }}
+	"/css/posts.css"
+{{ end }}
+
 {{ define "main" }}
-<!-- <div class="nav-bar">
-    <div> <span> Notes - {{ .Title }} </span> </div>
-</div> -->
 <div class="main-content">
-<div class="post-wrapper">	
+<article class="post" itemscope itemtype="http://schema.org/BlogPosting">	
 	<span class="byline">{{ .Date.Format "Jan 2, 2006" }}</span>
-	<h1> {{ .Title }} </h1>
+	<h1 class="postTitle"> {{ .Title }} </h1>
 	{{ .Content }}
-</div>
+</article>
 </div>
 {{ end }}
